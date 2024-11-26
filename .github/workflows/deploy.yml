@@ -27,6 +27,7 @@ jobs:
         run: npm install
 
       - name: Hacer la build
+        working-directory: ./Code
         run: npm run build
 
       - name: Subida a producción (upload artifact)
