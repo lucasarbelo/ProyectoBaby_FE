@@ -1,0 +1,55 @@
+name: Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+
+    steps:
+       # Verifica que tenga acceso al código
+      - name: Verificar acceso al código
+        uses: actions/checkout@v4
+
+       # Configurar Node.js
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+       # Instalar dependencias
+      - name: Instalar dependencias de Node (node_modules)
+        working-directory: ./Code
+        run: npm install
+
+      - name: Hacer la build
+        run: npm run build
+
+      - name: Subida a producción (upload artifact)
+        uses: actions/upload-artifact@v2
+        with:
+          name: production-files
+          path: ./Code/dist
+
+  deploy:
+    name: Deploy
+    needs: build
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Descarga del artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: production-files
+          path: ./Code/dist
+
+      - name: Deploy a GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./Code/dist
