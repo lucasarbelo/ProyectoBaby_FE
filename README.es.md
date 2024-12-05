@@ -1,5 +1,7 @@
 ﻿# Proyecto: Dashboard Babysitting
 [![Dynamic JSON Badge](https://img.shields.io/badge/Lang-En-blue)](https://github.com/lucasarbelo/ProyectoBaby_FE/blob/main/README.md)
+
+
 Instrucciones para probar el proyecto:
 En la carpeta **Code**:
 
