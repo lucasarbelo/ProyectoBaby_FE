@@ -1,6 +1,8 @@
 ﻿# Project: Dashboard Babysitting
 [![Dynamic JSON Badge](https://img.shields.io/badge/Lang-Es-blue)](https://github.com/lucasarbelo/ProyectoBaby_FE/blob/main/README.es.md)
+
 Instructions for testing the project:
+
 In the Code folder:
 
     Run npm install.
