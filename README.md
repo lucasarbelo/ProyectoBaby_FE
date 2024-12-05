@@ -12,7 +12,7 @@ In the Code folder:
 ## Project description:
 The goal of this project is to simplify the monitoring of activities related to the care of a baby, helping parents to automatically record events such as meals, bottles, diapers or games, and generating graphs and metrics in real time. This reduces the need for manual counting, relieving their task load.
 
-The project is developed with React and Redux and has several different functionalities:
+The project is developed with **React** and **Redux** and has several different functionalities
 
 ## Authentication:
  - Upon login, the user is redirected to a login screen, where he/she
@@ -23,8 +23,9 @@ The project is developed with React and Redux and has several different function
 
 ## Dashboard options:
 
- - Add events: food, bottle, diaper or game. Delete any event with a
-   button next to the corresponding listing. Logout.
+ - Add events: food, bottle, diaper or game.
+ - Delete any event with a button next to the corresponding listing.
+ - Logout.
 
 ![dashboard1](images/dashboard1.jpeg)  
 
