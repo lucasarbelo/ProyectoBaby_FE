@@ -100,7 +100,8 @@ const GraficoComidas = () => {
 
   return (
     <>
-    <div className='col-6 white cantidades'> 
+    <div className='row'>
+    <div className='white cantidades'> 
     <section className="justify-content-center">
     <h2 className="text-center mb-3">
       Grafico de <span>Comidas</span>
@@ -118,6 +119,7 @@ const GraficoComidas = () => {
             }} />
             
     </section>
+    </div>
     </div>
     </>
   )

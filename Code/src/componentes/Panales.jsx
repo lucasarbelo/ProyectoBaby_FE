@@ -58,29 +58,42 @@ const Panales = () => {
  
   }
 
-  return (
-    <div className='col coso'>
+ return (
+  <div className="col fijo"> {/* mb-4 para margen inferior */}
     <h3>Pañales</h3>
-    <div className="card" style={{ width: "100%",height: "90%" }}>
-    <img src='../materiales/img/panal.jpg' className="card-img-top" alt="..." />
+    <div
+      className="card"
+      style={{
+        width: "100%",
+        height: "90%",
+      }}
+    >
+      <img
+        src="../materiales/img/panal.jpg"
+        className="card-img-top"
+        alt="Imagen de pañal"
+        style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px", objectFit: "scale-down", height: "120px" }} 
+      />
       <div className="card-body">
         <p className="card-text">
-        Total de pañales cambiados en el dia: {panalesHoy.length}
+          Total de pañales cambiados en el día: {panalesHoy.length}
         </p>
         <div className="card-text">
-        {tiempoUltimoPanal ? (
-                  <p className="card-text">
-                  <small>Tiempo desde el último cambio: {horasTranscurridas} horas y {minutosTranscurridos} minutos, {segundosTranscurridos} segundos</small>
-                  </p>) : (
-                    <p>No se ha registrado ningún cambio de pañal hoy</p>
-                  )}
+          {tiempoUltimoPanal ? (
+            <p className="card-text">
+              <small>
+                Tiempo desde el último cambio: {horasTranscurridas} horas y {minutosTranscurridos} minutos, {segundosTranscurridos} segundos
+              </small>
+            </p>
+          ) : (
+            <p>No se ha registrado ningún cambio de pañal hoy</p>
+          )}
         </div>
       </div>
     </div>
+  </div>
+);
 
-
-    </div>
-  )
 }
 
 export default Panales

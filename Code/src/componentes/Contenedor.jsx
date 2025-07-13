@@ -4,8 +4,8 @@ import { NavLink, Outlet } from 'react-router-dom'
 const Contenedor = () => {
   return (
     <div className='container'>
-        <header className='row'>
-            <h1 className='text-center'>Seguimiento de bebé</h1>
+        <header className='row mt-20'>
+            <h1 className='text-center titulo-bebe'>Seguimiento de bebé</h1>
           
         </header>
              <main className='row'>

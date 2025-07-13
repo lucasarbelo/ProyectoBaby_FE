@@ -15,29 +15,9 @@ const ListadoAnterior = () => {
     }));
   }, [eventos])
   
-/*
-
-Se listarán todos los eventos registrados por el
-usuario. A cada categoría del evento corresponde un ícono que se
-puede encontrar en la URL de base de imágenes disponible en la
-documentación, a eso se debe concatenar el nombre de la imagen
-obtenida del servicio de categorías y la extensión .png. 
-Al costado de cada evento se deberá disponer un botón para eliminar los datos
-de ese evento.
-
-Listado de días anteriores: Se listarán todos los eventos
-correspondientes a días anteriores.
-
-
-supongo que acá se usa redux, para actualizarse automaticamente la lista, debo estar escuchando el array de eventos (pasados)
-debo tener 2 arrays, me traigo una vez los eventos y cargo los 2 array
-
-// DEJE EL FETCH EN DASHBOARD, SEGUN EL PROFE SE CARGA TODO LO Q ES REDUX AHI
-
-*/
 
   return (
-    <div className='col-6'>
+    <div className='col'>
       <h3>Listado Anterior</h3>
       <ul className="list-group">
         {eventosViejos.map(evento => <Evento key={evento.id} {...evento} />)}

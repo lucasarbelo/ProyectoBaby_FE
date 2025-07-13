@@ -12,13 +12,16 @@ const Analisis = () => {
     <div className='row'>
       <TiempoRestante />
     </div>
-    <div className='row'>
-      <GraficoCantidades />
-      <GraficoComidas />
-    </div>
+  
     </>
 
   )
 }
 
 export default Analisis
+
+
+/*  <div className='row'>
+      <GraficoCantidades />
+      <GraficoComidas />
+    </div> */

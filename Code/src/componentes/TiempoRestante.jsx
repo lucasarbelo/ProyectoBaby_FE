@@ -45,20 +45,29 @@ const TiempoRestante = () => {
   const colorTexto = estaPasado ? 'red' : 'green';
 
 
-  return (
-      <div className='card zonaBiberon' style={{width: "100%",height: "90%" , color: colorTexto }}>
-        <div className="card-body">
-          <h3 className="card-text">
-            <strong>
+return (
+  <div
+    className="card zonaBiberon mb-3"  // mb-3 agrega margen inferior (Bootstrap)
+    style={{
+      width: "100%",
+      height: "90%",
+      color: colorTexto,
+      borderRadius: "10px",       // bordes redondeados consistentes
+      boxShadow: "0 4px 6px rgba(0,0,0,0.1)", // sombra suave para destacar
+      overflow: "auto",           // scroll si el contenido es muy grande
+    }}
+  >
+    <div className="card-body">
+      <h3 className="card-text">
+        <strong>
           {estaPasado
-              ? '¡El bebé debería haber tomado su biberón!'
-              : `Próximo biberón en ${horas} horas, ${minutos} minutos y ${segundos} segundos`}
-              </strong>
-          </h3>
-    
+            ? '¡El bebé debería haber tomado su biberón!'
+            : `Próximo biberón en ${horas} horas, ${minutos} minutos y ${segundos} segundos`}
+        </strong>
+      </h3>
+    </div>
   </div>
-  </div>
-  )
+);
 }
 
 export default TiempoRestante

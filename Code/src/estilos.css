@@ -8,7 +8,8 @@
 
 body{
   display: block !important;
-  background-image: url('../materiales/img/maternidad.jpg');
+  background-color: #fff6ea;
+  background-image: url('../materiales/img/fondo.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
@@ -17,9 +18,13 @@ body{
 #root {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #000000;
 
 
+}
+
+.titulo-bebe {
+  margin-top: 100px;
 }
 
 .cantidades {
@@ -29,8 +34,10 @@ body{
 }
 .coso {
   padding: 20px;
-  margin-top: 10px;
-  background-color: #00000063;
+}
+
+.listadox {
+  height: 500px;
 }
 
 .fondo {
@@ -73,10 +80,10 @@ body{
 
 /*==contenido==*/
 .contenido {
-  max-width: 600px;
+  max-width: 1200px;
   margin: 0 auto;
   padding:0 20px;
-  min-height: 600px;
+  min-height: auto;
 }
 
 /*==Agregar==*/
@@ -126,4 +133,61 @@ input[type='checkbox']:checked + .checkLabel {
 
 .zonaBiberon{
   background-color: white;
+}
+
+.listados-card {
+  background-color: #d8c9ae; /* gris muy claro o celeste pastel */
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px; /* ajustá según tus necesidades */
+  overflow-y: auto; /* scroll vertical si lo deseas */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.agregar-card{
+  background-color: #d8c9ae; /* gris muy claro o celeste pastel */
+  border-radius: 10px;
+  padding: 20px;
+  height: 500px; /* ajustá según tus necesidades */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.dashboard-card {
+  background-color: #d8c9ae; /* gris muy claro o celeste pastel */
+  border-radius: 10px;
+  padding: 20px;
+  height: auto; /* ajustá según tus necesidades */
+  max-height: 450px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.biberonypanial-card {
+  background-color: #d8c9ae; /* gris muy claro o celeste pastel */
+  border-radius: 10px;
+  padding: 15px;
+  height: auto; /* ajustá según tus necesidades */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.fijo{
+  height: 360px;
+  margin-bottom: 11px;
+}
+
+/* Opcional: oculta scrollbar hasta hover */
+.dashboard-card::-webkit-scrollbar {
+  height: 6px;
+}
+
+.dashboard-card::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.dashboard-card:hover::-webkit-scrollbar-thumb {
+  background-color: #999;
 }

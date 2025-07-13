@@ -127,9 +127,9 @@ const Agregar = () => {
 
   return (
     <>
-    <section className="row justify-content-center p-5 coso">
-    <h2 className="text-center mb-3">
-      Agregar <span>tarea</span>
+    <section className="row justify-content-center p-5">
+    <h2 className="text-center mb-5">
+      Agregar <span>evento</span>
     </h2>
   <form action="#" className="">
     <label htmlFor="categoria">Categoría </label>
