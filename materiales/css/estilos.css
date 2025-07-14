@@ -1,0 +1,98 @@
+
+body {}
+
+h1, h2{
+    font-family: Bebas;
+}
+
+h1 {
+    font-size: 70px;
+    color: white;
+}
+
+h1 span{
+    color: var(--colorRojo);
+}
+
+h2{
+    font-size: 40px;
+    color: #000000;
+}
+
+/* MENU */
+header ul{
+    background-color: #f096b8;
+}
+
+header ul li a{
+    display: block;
+    color: white;
+    font-family: Bebas;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+header ul li a:hover{
+    background-color: white;
+    color: #972751;
+}
+
+section:nth-of-type(1){
+    background-color: #972751;
+}
+
+section:nth-of-type(2){
+    background-image: url("../img/maternidad.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(3){
+    background-color: #f096b8;
+}
+
+section:nth-of-type(3) label{
+    display: block;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+section:nth-of-type(4){
+    background-image: url("../img/paternidad.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section:nth-of-type(5){
+    background-color: #972751;
+}
+
+/* SECCION 5*/
+
+input, textarea, select{
+    border: 2px solid var(--colorCeleste);  
+}
+
+input[type="submit"]{
+    background-color: #f096b8;
+    color: white;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+    color: #972751;
+}
+
+/* footer */
+
+footer{
+    background-color: var(--colorRojo);
+    color: white;
+}
+
+/* FUENTES */
+
+@font-face {
+    font-family: Bebas;
+    src: url("../fonts/bebas.ttf");
+}
