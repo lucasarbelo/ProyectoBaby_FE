@@ -6,7 +6,7 @@ import Dashboard from './componentes/Dashboard'
 import Login from './componentes/Login'
 import Register from './componentes/Register'
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Provider } from 'react-redux';
 import { store } from './store/store';
 import Contenedor from './componentes/Contenedor';
@@ -18,7 +18,7 @@ function App() {
 
   return (
     <Provider store={store}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Contenedor />}>
             <Route path="/" element={<Login />} />
@@ -27,7 +27,7 @@ function App() {
             <Route path='*' element={<NoEncontrado />}/>
           </Route>
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       <ToastContainer />
     </Provider>
   )
