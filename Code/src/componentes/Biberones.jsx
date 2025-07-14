@@ -55,7 +55,7 @@ let segundosTranscurridos = 0;
     <div className='col fijo'>
       <h3>Biberones</h3>
         <div className="card" style={{ width: "100%", height: "90%" }}>
-          <img src='/materiales/img/mamadera.png' className="card-img-top" alt="..." style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px", objectFit: "scale-down", height: "120px" }}  />
+          <img src='./materiales/img/mamadera.png' className="card-img-top" alt="..." style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px", objectFit: "scale-down", height: "120px" }}  />
           <div className="card-body">
             <p className="card-text">
               Total de biberones ingeridos hoy: {biberonesHoy.length}

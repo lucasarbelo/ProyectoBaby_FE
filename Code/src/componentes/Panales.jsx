@@ -69,7 +69,7 @@ const Panales = () => {
       }}
     >
       <img
-        src="/materiales/img/panal.png"
+        src="./materiales/img/panal.png"
         className="card-img-top"
         alt="Imagen de pañal"
         style={{ borderTopLeftRadius: "10px", borderTopRightRadius: "10px", objectFit: "scale-down", height: "120px" }} 
