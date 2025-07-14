@@ -1,55 +1,35 @@
-name: Deploy
+name: Deploy Vite site to GitHub Pages
 
 on:
   push:
     branches:
       - main
+  workflow_dispatch:
 
 jobs:
-  build:
-    name: Build
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-       # Verifica que tenga acceso al código
-      - name: Verificar acceso al código
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-       # Configurar Node.js
-      - name: Configurar Node.js
+      - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: '20' # o tu versión local
 
-       # Instalar dependencias
-      - name: Instalar dependencias de Node (node_modules)
-        working-directory: ./Code
-        run: npm install
+      - name: Install dependencies
+        run: |
+          cd Code
+          npm install
 
-      - name: Hacer la build
-        working-directory: ./Code
-        run: npm run build
+      - name: Build project
+        run: |
+          cd Code
+          npm run build
 
-      - name: Subida a producción (upload artifact)
-        uses: actions/upload-artifact@v4
-        with:
-          name: production-files
-          path: ./Code/dist
-
-  deploy:
-    name: Deploy
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
-
-    steps:
-      - name: Descarga del artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: production-files
-          path: ./Code/dist
-
-      - name: Deploy a GitHub Pages
+      - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
