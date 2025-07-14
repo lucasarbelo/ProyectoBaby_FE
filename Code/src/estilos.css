@@ -9,7 +9,7 @@
 body{
   display: block !important;
   background-color: #fff6ea;
-  background-image: url('./materiales/img/fondo.png');
+  background-image: url('../public/materiales/img/fondo.png');
   background-position: center; 
   background-repeat: no-repeat; 
   background-size: cover;
