@@ -25,14 +25,13 @@ El proyecto está desarrollado con **React** y **Redux** y cuenta con distintas 
   -  Eliminar cualquier evento con un botón junto al listado correspondiente.
   -  Cerrar sesión (logout).
 
-![dashboard1](images/dashboard1.jpeg)  
+![dashboard1](images/dashboard.jpeg)  
 
   ## Métricas automatizadas en el menú:
   
  - Listado de eventos del día y anteriores.
  - Gráficos que muestran la cantidad de eventos por categoría.
-- Gráfico semanal de comidas ingeridas por día.
-- Indicador del tiempo transcurrido desde el último biberón o cambio de pañal.
+ - Gráfico semanal de comidas ingeridas por día.
+ - Indicador del tiempo transcurrido desde el último biberón o cambio de pañal.
    
-![dashboard2](images/dashboard2.jpeg)  
 
