@@ -27,7 +27,7 @@ The project is developed with **React** and **Redux** and has several different 
  - Delete any event with a button next to the corresponding listing.
  - Logout.
 
-![dashboard1](images/dashboard1.jpeg)  
+![dashboard1](images/dashboard.jpeg)  
 
   ## Automated metrics in the dashboard menu: 
   
@@ -37,5 +37,4 @@ The project is developed with **React** and **Redux** and has several different 
  - Indicator of the time elapsed since the last bottle or diaper
    change.
    
-![dashboard2](images/dashboard2.jpeg)  
 
