@@ -1,13 +1,7 @@
 ﻿# Proyecto: Dashboard Babysitting
 [![Dynamic JSON Badge](https://img.shields.io/badge/Lang-En-blue)](https://github.com/lucasarbelo/ProyectoBaby_FE/blob/main/README.md)
 
-
-Instrucciones para probar el proyecto:
-En la carpeta **Code**:
-
-    Ejecutar npm install.
-    Ejecutar npm run build.
-    Ejecutar npm run dev.
+https://lucasarbelo.github.io/ProyectoBaby_FE/
 
 ## Descripción del proyecto:
 El objetivo de este proyecto es simplificar el control de las actividades relacionadas con el cuidado de un bebé, ayudando a los padres a registrar de forma automática eventos como comidas, biberones, pañales o juegos, y generando gráficos y métricas en tiempo real. Esto reduce la necesidad de realizar conteos manuales, aliviando su carga de tareas.
