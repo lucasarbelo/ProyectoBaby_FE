@@ -1,13 +1,7 @@
 ﻿# Project: Dashboard Babysitting
 [![Dynamic JSON Badge](https://img.shields.io/badge/Lang-Es-blue)](https://github.com/lucasarbelo/ProyectoBaby_FE/blob/main/README.es.md)
 
-Instructions for testing the project:
-
-In the Code folder:
-
-    Run npm install.
-    Run npm run build.
-    Run npm run dev.
+https://lucasarbelo.github.io/ProyectoBaby_FE/
 
 ## Project description:
 The goal of this project is to simplify the monitoring of activities related to the care of a baby, helping parents to automatically record events such as meals, bottles, diapers or games, and generating graphs and metrics in real time. This reduces the need for manual counting, relieving their task load.
